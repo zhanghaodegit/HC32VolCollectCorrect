@@ -1,0 +1,20 @@
+--cpu Cortex-M0+
+".\objects\startup_hc32f003.o"
+".\objects\system_hc32f003.o"
+".\objects\main.o"
+".\objects\rn8209.o"
+".\objects\alg.o"
+".\objects\led.o"
+".\objects\uart_test.o"
+".\objects\btimer.o"
+".\objects\uart_host.o"
+".\objects\clk.o"
+".\objects\bt.o"
+".\objects\ddl.o"
+".\objects\interrupts_hc32f003.o"
+".\objects\uart.o"
+".\objects\gpio.o"
+--strict --scatter ".\Objects\uart_8209.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\uart_8209.map" -o .\Objects\uart_8209.axf
